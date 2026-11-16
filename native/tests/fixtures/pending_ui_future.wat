@@ -1,0 +1,16 @@
+(component
+  (type $future (future))
+  (core func $new (canon future.new $future))
+  (core module $guest
+    (import "" "new" (func $new (result i64)))
+    (func (export "render") (param i32 i32) (result i32)
+      (i32.wrap_i64 (call $new)))
+    (memory (export "memory") 1)
+    (func (export "realloc") (param i32 i32 i32 i32) (result i32) (i32.const 4096))
+  )
+  (core instance $guest (instantiate $guest (with "" (instance (export "new" (func $new))))))
+  (func $render (param "id" string) (result $future)
+    (canon lift (core func $guest "render") (memory (core memory $guest "memory")) (realloc (core func $guest "realloc"))))
+  (instance $events (export "on-ui-render" (func $render)))
+  (export "astrobox:psys-plugin/event-v3" (instance $events))
+)

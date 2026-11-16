@@ -1,0 +1,46 @@
+--- a/src/config.rs
++++ b/src/config.rs
+@@ -201,6 +201,7 @@
+     pub(crate) x86_float_abi_ok: Option<bool>,
+     pub(crate) shared_memory: bool,
+     pub(crate) rr_config: RRConfig,
++    pub(crate) legacy_component_sync_suspension: bool,
+ }
+ 
+ /// User-provided configuration for the compiler.
+@@ -317,6 +318,7 @@
+             x86_float_abi_ok: None,
+             shared_memory: false,
+             rr_config: RRConfig::None,
++            legacy_component_sync_suspension: false,
+         };
+         ret.wasm_backtrace_details(WasmBacktraceDetails::Environment);
+         ret
+@@ -3407,6 +3409,13 @@
+     /// This option is `false` by default.
+     pub fn shared_memory(&mut self, enable: bool) -> &mut Self {
+         self.shared_memory = enable;
++        self
++    }
++
++    /// Allows pre-standard Component Model guests to suspend synchronous calls.
++    /// This compatibility extension is disabled by default.
++    pub fn legacy_component_sync_suspension(&mut self, enable: bool) -> &mut Self {
++        self.legacy_component_sync_suspension = enable;
+         self
+     }
+ 
+--- a/src/runtime/component/concurrent.rs
++++ b/src/runtime/component/concurrent.rs
+@@ -1860,9 +1860,10 @@
+ 
+     fn enter_sync_call(&mut self, callee: RuntimeInstance) -> Result<()> {
+         log::trace!("enter sync-typed call {callee:?}");
++        let legacy = self.engine().config().legacy_component_sync_suspension;
+         let state = self.instance_state(callee).concurrent_state();
+         let old_do_not_suspend = state.do_not_suspend;
+-        state.do_not_suspend = true;
++        state.do_not_suspend = !legacy;
+ 
+         let thread = self.current_guest_thread()?;
+         let thread = self.concurrent_state_mut()?.get_mut(thread.thread)?;

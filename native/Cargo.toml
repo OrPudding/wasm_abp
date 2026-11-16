@@ -1,0 +1,39 @@
+[package]
+name = "wasm_abp"
+version = "0.1.0"
+edition = "2021"
+license = "AGPL-3.0-only"
+build = "build_support.rs"
+
+[lib]
+name = "wasm_abp"
+crate-type = ["cdylib", "staticlib", "rlib"]
+
+[dependencies]
+anyhow = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sha2 = "0.10.9"
+tokio = { version = "1", default-features = false, features = ["sync", "rt", "rt-multi-thread"] }
+wasmtime = { version = "=50.0.1", default-features = false, features = [
+    "cranelift",
+    "component-model",
+    "component-model-async",
+    "async",
+    "runtime",
+    "parallel-compilation",
+] }
+wasmtime-wasi = { version = "=50.0.1", default-features = false, features = ["p1", "p2", "p3"] }
+wasmtime-wasi-http = { version = "=50.0.1", default-features = false, features = ["p2", "p3", "component-model-async"] }
+hyper = { version = "1", default-features = false }
+http-body-util = "0.1"
+
+[patch.crates-io]
+wasmtime = { path = "vendor/wasmtime" }
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+
+[target.'cfg(target_os = "ios")'.dependencies]
+wasmtime = { version = "=50.0.1", default-features = false, features = ["pulley"] }

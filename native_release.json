@@ -1,0 +1,38 @@
+{
+  "repository": "OrPudding/wasm_abp",
+  "tag": "v0.1.1",
+  "libraries": {
+    "aarch64-apple-darwin": {
+      "archiveSha256": "2e6e462f0f5cfd170ce050310e07a3b7b3a614ddbb29442a1acc0b4a43273153",
+      "librarySha256": "e0837cb28830f9014d74c886e601f42ebf1be069cf7267d39085bb8b7b3b5965"
+    },
+    "aarch64-linux-android": {
+      "archiveSha256": "6acab9fd118474179bbc867fee58dffc9fed2bed8c3694bdf2e0f962f7724cf1",
+      "librarySha256": "e71b9390f6ab79684df30d578a720101c8cd093676ac9505eeeb2ac8bfcc4a7f"
+    },
+    "aarch64-unknown-linux-gnu": {
+      "archiveSha256": "28fd466f5ba43912459694bb9ab3067bc92e8e5281191c169a8166d54100597c",
+      "librarySha256": "38816807de162707507fbedd267c5a7e96d7bd6fd48aded5eb57b907b2c25e16"
+    },
+    "armv7-linux-androideabi": {
+      "archiveSha256": "ebb5ef559587e65b124038bbfe5625085a5d473a8ffeb0e8099981079f270d48",
+      "librarySha256": "1ffe717435212ec93cdda450b38cb55a4e87fba70a7f20111da615141018109b"
+    },
+    "x86_64-apple-darwin": {
+      "archiveSha256": "4c46a8c63a1d5ad593c763d01e78e33a2a77e6d19a510ec7f9109774adf86991",
+      "librarySha256": "b1af3f050c7f517c4dcba3d97f88a2baeb4e9365089666362f008faf7ffc583b"
+    },
+    "x86_64-linux-android": {
+      "archiveSha256": "dbc966bd6d9f383e86eef516088489fdc86315ed65be0a9f148cdc123ee177e9",
+      "librarySha256": "e4d2fef3a433d69170b739d53c08ef53c0f97cb67c4568760c4d72dc3502e619"
+    },
+    "x86_64-pc-windows-msvc": {
+      "archiveSha256": "5ec7c7fff08d8624e1c0e259c93b6ebc5ec157ce42027a9dc7151b1d507a8d5c",
+      "librarySha256": "0c29cd922893a61a937fe507b815c3c1dcc06b02322d81f17aa3976fac58ac29"
+    },
+    "x86_64-unknown-linux-gnu": {
+      "archiveSha256": "b7447a1194676b3db025f77a885f6a362c2a960aef26b1bbe0b0d0ee4e1cda57",
+      "librarySha256": "94190dc93d532afad0fb117a754169b492f0ca77b52135b15f8b28a244131ccd"
+    }
+  }
+}
