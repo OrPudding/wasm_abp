@@ -1,6 +1,6 @@
 name: wasm_abp
 description: Unified WebAssembly runtime and AstroBox Plugin System (ABP) engine for OronBox.
-version: 0.1.1
+version: 0.1.2
 repository: https://github.com/OrPudding/wasm_abp
 publish_to: none
 
