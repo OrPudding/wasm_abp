@@ -3,36 +3,36 @@
   "tag": "v0.1.1",
   "libraries": {
     "aarch64-apple-darwin": {
-      "archiveSha256": "2e6e462f0f5cfd170ce050310e07a3b7b3a614ddbb29442a1acc0b4a43273153",
-      "librarySha256": "e0837cb28830f9014d74c886e601f42ebf1be069cf7267d39085bb8b7b3b5965"
+      "archiveSha256": "bb58aaaedce7fb863a5ef572ade6fa7f7201c0ae411ae782a250bbf2510c31e1",
+      "librarySha256": "b3e80150bdfbced1f53eb5b92131c6ecb72d3824b5a0131b69b41cd1991a3090"
     },
     "aarch64-linux-android": {
-      "archiveSha256": "6acab9fd118474179bbc867fee58dffc9fed2bed8c3694bdf2e0f962f7724cf1",
-      "librarySha256": "e71b9390f6ab79684df30d578a720101c8cd093676ac9505eeeb2ac8bfcc4a7f"
+      "archiveSha256": "5d9e98f0ad650ed835922c3b75c2fdfbd8c2fff9cbd3119651b32ef766dd2001",
+      "librarySha256": "b1e2db94b98be849ad0244f0d7768733ada5f98f709057cf2a15d8dcf14deaea"
     },
     "aarch64-unknown-linux-gnu": {
-      "archiveSha256": "28fd466f5ba43912459694bb9ab3067bc92e8e5281191c169a8166d54100597c",
-      "librarySha256": "38816807de162707507fbedd267c5a7e96d7bd6fd48aded5eb57b907b2c25e16"
+      "archiveSha256": "ce4b3c08f4d7891a86891976882589cb43852d9932c6d138a13120996abad106",
+      "librarySha256": "5690b2d271a8827789e5c538bebd72ba9355202dc78ac9f041490a637e920a9b"
     },
     "armv7-linux-androideabi": {
-      "archiveSha256": "ebb5ef559587e65b124038bbfe5625085a5d473a8ffeb0e8099981079f270d48",
-      "librarySha256": "1ffe717435212ec93cdda450b38cb55a4e87fba70a7f20111da615141018109b"
+      "archiveSha256": "89bb3b43a3cb258ea1f5a0fb776ff97dc0d8604c44bc6d1907a3b6b7f28db318",
+      "librarySha256": "b2f3e7597d97c18c8953caf131f56bbd22e79cdfe1c637c58fd5de5232f3b6ec"
     },
     "x86_64-apple-darwin": {
-      "archiveSha256": "4c46a8c63a1d5ad593c763d01e78e33a2a77e6d19a510ec7f9109774adf86991",
-      "librarySha256": "b1af3f050c7f517c4dcba3d97f88a2baeb4e9365089666362f008faf7ffc583b"
+      "archiveSha256": "e5331a4d85bca1ca28096df44b2823cfaa7ddadeea20889bee263befe3ce667b",
+      "librarySha256": "b3ca1a1d0c1afd8d439802a9eb65fa03c6ce674b75c858c742a359b5dc3416a2"
     },
     "x86_64-linux-android": {
-      "archiveSha256": "dbc966bd6d9f383e86eef516088489fdc86315ed65be0a9f148cdc123ee177e9",
-      "librarySha256": "e4d2fef3a433d69170b739d53c08ef53c0f97cb67c4568760c4d72dc3502e619"
+      "archiveSha256": "e0a8a60df34cc222a6b3479e6fa6a1657c333b5a3c06b5e1d5efbe5cefbb8386",
+      "librarySha256": "dcdb7ab638a647d761faab43bd20147df9f94cfcd52fb4ebd6a95d750e23e24a"
     },
     "x86_64-pc-windows-msvc": {
-      "archiveSha256": "5ec7c7fff08d8624e1c0e259c93b6ebc5ec157ce42027a9dc7151b1d507a8d5c",
-      "librarySha256": "0c29cd922893a61a937fe507b815c3c1dcc06b02322d81f17aa3976fac58ac29"
+      "archiveSha256": "94a7435e1fd43b836984452292ae4d7da69b5cca30ed32aeb50cd63cb227a67a",
+      "librarySha256": "94d571666bcca37ff47be272c4501524217bb1733588349a022a0f1f348e6e00"
     },
     "x86_64-unknown-linux-gnu": {
-      "archiveSha256": "b7447a1194676b3db025f77a885f6a362c2a960aef26b1bbe0b0d0ee4e1cda57",
-      "librarySha256": "94190dc93d532afad0fb117a754169b492f0ca77b52135b15f8b28a244131ccd"
+      "archiveSha256": "5a241f098ca1abadf33b6bf6b2c76534226e2e60723b336f02b34b37423cbda4",
+      "librarySha256": "1767769787c8bb4cf77122ece3f45cf97249fc724b7c0cb3da00751c523095e9"
     }
   }
 }
